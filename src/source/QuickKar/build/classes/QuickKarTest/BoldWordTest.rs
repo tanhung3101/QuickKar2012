@@ -1,0 +1,2 @@
+QuickKarTest.BoldWordTest
+QuickKarTest.CustomRenderer

@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>QuickKar - User Manual - How To Use</title>
+</head>
+
+<body>
+<div>
+	<a name="top"><div align="center"><h1>How To Use</h1></div></a>
+	<p></p>
+	<div align="right"><a href="javascript:window.print()">Print this page</a></div>
+</div>
+<div>
+	<a name="overview"><p>
+	<h3>Overview</h3>
+	When you first startup the program, this panel appears:<br />
+	<br />
+	<div align=center><img src="screenshots/main.png" alt="Main Window" width=400 height=300 /></div><br />
+	<li><strong>Exit</strong>: quit the program, save all changes made if any.</li>
+	<li><strong>English/Vietnamese</strong>: Switch the GUI between English and Vietnamese interface.</li>
+	<li><strong>Guest</strong>: use this program as a CUSTOMER.</li>
+	<li><strong>Staff</strong>: this is for STAFF and ADMIN to login and manipulate the database.</li>
+	<br />
+	In <strong>Guest</strong> mode, customers are allowed to perform searching, sorting ONLY. No edit priviledges are granted for customers. There are 2 GUIs for choosing between them. More details later.<br />
+	</p></a>
+	<a name="customer"><p>
+	<h3>Customer</h3>
+	To use this program as a Customer, click on <strong>Guest</strong><br />
+	<br />
+	This is the main window for Customer:<br />
+	<br />
+	<div align=center><img src="screenshots/guest_rate.png" alt="Customer Window" width=400 height=300 /></div><br />
+	<br />
+	The program list all the songs available in the database, dividing into 20 songs per pages. Users can click on the page number buttons located at the bottom line to switch back and forth.<br />
+	<br />
+	<li><strong>To perform a song search:</strong> type a piece of word in the search box - located under the menu bar and hit Enter, or click <img src="screenshots/searchButton.png" alt="" />. Searching can be performed using any information, from SongCode, to SongName, Lyrics, or Composer.<br />
+	<br />
+	<strong>NOTE</strong>: The updated version implements Instant search for Simple Search mode, so users do not need to hit Enter anymore. Just type the keywords, and the result will be displayed below, with the keyword highlighted.
+	<br />
+	This program support Unicode, so you can just type in Vietnamese with full accents support.<br />
+	<br />
+	For example, if we want to search for "tia nang hat mua":<br />
+	<br />
+	<div align=center><img src="screenshots/guest_search.png" alt="" width=400 height=300 /></div><br /></li>
+	<br />
+	<li><strong>To come back to display all songs:</strong> click on the button "<strong>ALL</strong>".<br /></li>
+	<br />
+	<li><strong>Customers can rate the song</strong> they like, by clicking on the star:</li>
+	<div align=center><img src="screenshots/guest_rate.png" alt="" width=400 height=300 /></div><br /></li>
+	Note that he or she needs to provide phone number to rate.<br />
+	The 10 top rated songs will appear in a separated list for reference.
+	<br />
+	<strong>There are 2 kinds of search</strong>: Simple search and Advanced search.
+	<div align=center><img src="screenshots/guest_search_type.png" alt="" width=400 height=50 /></div><br /></li>
+	<li>Simple search: Search by keywords against all song fields (code, title, lyrics, and composer). A song is displayed in the result list only if ALLof the given keywords found in the fields of the song.</li>
+	<li>Advanced search: song search with: "Exact keyword or phrase", or "Any of the keywords", or "None of the keywords"</li>
+	<br />
+	<li><strong>To switch between 2 available GUIs:</strong> click on the button <img src="screenshots/switchButton.png" alt="" />, or press <strong>SHIFT + S</strong>.<br /></li>
+	<br />
+	This is the 2nd GUI:<br />
+	<br />
+	<div align=center><img src="screenshots/guest_2.png" alt="Customer Window" width=400 height=300 /></div><br />
+	<br />
+	<li><strong>To quit the program:</strong> click on <img src="screenshots/logOutButton.png" alt="" />.<br /></li>
+	<br />
+	<li><strong>To view the information about the authors:</strong> click <strong>Help > About</strong> or press <strong>SHIFT + A</strong> <br /></li>
+	<br />
+	<li><strong>To get online help:</strong> click <strong>Help > User Guide</strong> or press <strong>F1</strong> at any time.<br /></li>
+	</p></a>
+	<a name="staff"><p>
+	<h3>Staff</h3>
+	To use this program as Staff, click on "<strong>Staff</strong>" button and login using your account information.<br/>
+	<br />
+	<div align=center><img src="screenshots/login.png" alt="Login Window" width=400 height=300 /></div><br />
+	<br />
+	This is the main window for <strong>Staff</strong>: <br />
+	<br />
+	<div align=center><img src="screenshots/staff.png" alt="Staff Window" width=400 height=300 /></div><br />
+	<br />
+	Staff has all the functions of Customer, plus some more additional features:<br />
+	<br />
+	<li><strong>Import songs to database:</strong> Initially, the program's database is blank. It can receive data from multiple .CSV files with <strong>","</strong> delimeter. To import data from appropriatedly formated CSV files, click <img src="screenshots/importButton.png" alt="" /> and point to the CSV files, click <strong>Open</strong>. Wait till it finishes and click <strong>OK</strong>.<br />
+	<br />
+	<strong>More info on .csv format</strong>: The .csv content should be EXACTLY formatted as:
+	<li>SongCode,"SONGNAME","Lyric, lyric",Composer</li>
+	<li>SongCode,"SONGNAME","Lyric, lyric","Composer1, Composer2"</li>
+	Do not leave any other additional character but those specified above.
+	<br />
+	<div align=center><img src="screenshots/staff_import_1.png" alt="" /></div><br />
+	<br />
+	<div align=center><img src="screenshots/staff_import_2.png" alt="" width=350 height=250 /></div>
+	<br />
+	</li>
+	<li><strong>Add a song:</strong> click on <img src="screenshots/addButton.png" alt="" /> or press <strong>Ctrl + N</strong> and fill in the form. Then click "<strong>Add</strong>".<br />
+	<br />
+	<strong>Note</strong>: SongCode field must contain exactly 5-digits and must not be the code already been in the database.
+	<br />
+	<div align=center><img src="screenshots/staff_add.png" alt="" /></div>
+	<br />
+	</li>
+	<li><strong>Edit a song:</strong> choose a song, then click <img src="screenshots/editButton.png" alt="" />, or right click and choose <strong>Edit</strong>: <img src="screenshots/staff_contextmenu.png" alt="" />, or press <strong>Ctrl + E</strong>.<br />
+	<br />
+	<div align=center><img src="screenshots/staff_edit.png" alt="" /></div>
+	<br />
+	</li>
+	<li><strong>Delete a song or many:</strong> choose songs, then click <img src="screenshots/deleteButton.png" alt="" /> or right click and choose <strong>Delete</strong>: <img src="screenshots/staff_contextmenu.png" alt="" />, or press <strong>Ctrl + D</strong>.</li>
+	<br />
+	<li><strong>To switch between 2 available GUIs:</strong> click on the button <img src="screenshots/switchButton.png" alt="" />, or press <strong>SHIFT + S</strong>.<br /></li>
+	<br />
+	This is the 2nd GUI:<br />
+	<br />
+	<div align=center><img src="screenshots/staff_gui_2.png" alt="Staff Window" width=400 height=300 /></div><br />
+	<br />
+	Any action performed will be save when the program is close or logout. User can also choose <strong>File > Save</strong> to save manually as needed.
+	</p></a>
+	<a name="admin"><p>
+	<h3>Admin</h3>
+	To use this program as Admin, click on "<strong>Admin</strong>" button and login using your account information.<br/>
+	<br />
+	<div align=center><img src="screenshots/login.png" alt="Login Window" width=400 height=300 /></div><br />
+	<br />
+	This is the main window for <strong>Admin</strong>: <br />
+	<br />
+	<div align=center><img src="screenshots/admin.png" alt="Admin Window" width=400 height=300 /></div><br />
+	<br />
+	<h3>Features:</h3>
+	<li><strong>Add an account:</strong> click <img src="screenshots/addButton.png" alt="" />, or press <strong>Ctrl + N</strong> and fill in the form. Then click "<strong>Add</strong>".<br />
+	<br />
+	<strong>Note:</strong>
+	<li>Email must be valid. i.e. It must not be something like: aa@aa.aa. Should be name@yahoo.com</li>
+	<li>Phone must be in the pattern of xx-xxxx-xxxx or xxx-xxx-xxxx</li>
+	<br />
+	<div align=center><img src="screenshots/admin_add.png" alt="" /></div>
+	<br />
+	</li>
+	<li><strong>Edit an account:</strong> choose an account, then click <img src="screenshots/editButton.png" alt="" />, or right click and choose <strong>Edit</strong>: <img src="screenshots/staff_contextmenu.png" alt="" />, or press <strong>Ctrl + E</strong>.<br />
+	<br />
+	<div align=center><img src="screenshots/admin_edit.png" alt="" /></div>
+	<br />
+	</li>
+	<li><strong>Delete account(s):</strong> choose account(s), then click <img src="screenshots/editButton.png" alt="" />, or right click and choose <strong>Edit</strong>: <img src="screenshots/staff_contextmenu.png" alt="" />, or press <strong>Ctrl + E</strong>.<br />
+	<br />
+	</li>
+	</p></a>
+</div>
+<div align="right"><a href="#top">Back To Top</a></div>
+</body>
+</html>

@@ -1,0 +1,2 @@
+QuickKarView.NewPanel
+QuickKarView.ChooseRoleView
