@@ -4,10 +4,10 @@ QuickKar2012
 QuickKar2012 Project
 
 Members:
-+Phan Quang Hung
-+Nguyen Ho Tan Hung
-+Vuong Do Thanh Huy
-+Hoang Kieu Anh
++ Phan Quang Hung
++ Nguyen Ho Tan Hung
++ Vuong Do Thanh Huy
++ Hoang Kieu Anh
 + Le Anh Tuan
 
 
